@@ -23,6 +23,9 @@ export class HomePage {
 
   }
 
+btnClicked(){
+  alert("Drowsiness Detection activated");
+}
   ionViewDidLoad(){
     this.initMap();
     this.loadMap();

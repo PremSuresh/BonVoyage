@@ -1,13 +1,15 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+  <ion-navbar color="dark" >
+    <ion-title >
+        <style ></style> 
+        Bon Voyage
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <div id="floating-panel">
+    <button ion-button (click)="btnClicked()" block color="primary">Start Drowsiness Detection</button>
+  <!-- <div id="floating-panel">
     <b>Start: </b>
     <select [(ngModel)]="start" id="start" (change)="calculateAndDisplayRoute()">
       <option value="chicago, il">Chicago</option>
@@ -38,7 +40,7 @@
       <option value="san bernardino, ca">San Bernardino</option>
       <option value="los angeles, ca">Los Angeles</option>
     </select>
-    </div>
+    </div> -->
     <ion-card>
         <ion-card-content>
             <div #directionsPanel id="down"></div>
